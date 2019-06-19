@@ -35,7 +35,7 @@ BOT.message start_with: '!hg next' do |event|
 end
 
 BOT.message start_with: '!hg stop' do |event|
-
+  Game.stop event
 end
 
 BOT.run

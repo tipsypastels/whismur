@@ -7,6 +7,14 @@ class Game
     end
   end
 
+  def self.stop(event)
+    if (game = ALL[event.channel.id])
+      game.stop!
+    else
+      event.respond("No game is ongoing in this channel. Start one with `!hg start {mentions...}`")
+    end
+  end
+
   ALL = {}
 
   attr_reader :event, :channel, :players
