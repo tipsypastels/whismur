@@ -9,5 +9,6 @@ class Action::Leisure < Action::Base
     'spends the day debating about rom hacking vs game development',
     'vapes florida',
     'punches a tree',
+    'spends the day downloading the internet',
   ]
 end
